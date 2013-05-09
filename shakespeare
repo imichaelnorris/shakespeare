@@ -6,7 +6,7 @@ import random
 import string
 
 if __name__ == '__main__':
-    os.chdir('/bin')
+    os.chdir('shakespeare')
 
     num = random.randint(1, 155)
     #print(num)
