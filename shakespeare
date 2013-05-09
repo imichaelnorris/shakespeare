@@ -6,7 +6,7 @@ import random
 import string
 
 if __name__ == '__main__':
-    #os.chdir('shakespeare')
+    os.chdir('bin')
 
     num = random.randint(1, 155)
     #print(num)
@@ -26,5 +26,5 @@ if __name__ == '__main__':
             poem += '\n'
         print(line)
 
-    #Play it out loud
-    os.system('echo "{0}" | festival --tts'.format(poem))
+    #Play it out loud -- disabled for your sanity
+    #os.system('echo "{0}" | festival --tts'.format(poem))
