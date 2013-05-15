@@ -8,7 +8,7 @@ import string
 if __name__ == '__main__':
     os.chdir('shakespeare')
 
-    num = random.randint(1, 155)
+    num = random.randint(1, 154)
     #print(num)
     f = open('sonnets.txt', 'r')
     for i in range(1, num*15):
