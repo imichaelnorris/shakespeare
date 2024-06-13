@@ -3,8 +3,11 @@ shakespeare
 
 Prints a Shakespearean Sonnet when you Open a Terminal.
 
-Current known issues:
-One of the sonnets has 13 lines.
+There are multiple sonnets that don't have 14 lines.
+
+Sonnet 126 has 12 lines, for example.
+
+These are handled by assuming a sonnet will have at most 20 lines, breaking at the next number seen, and using the 4/4/4/2 spacing regardless of the number of lines.
 
 # How to run
 1. Place the shakespeare folder in a directory called shakespeare
