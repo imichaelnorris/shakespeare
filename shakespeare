@@ -12,13 +12,15 @@ if __name__ == '__main__':
         line = f.readline()
         if (str(num) in line):
             print("Sonnet {0}".format(str(num)))
-            print('------')
+            print('---------' + ('-' if num >= 100 else ''))
             break
 
     poem = ''
     for i in range(0, 14):
-        line = f.readline().split('\n')[0][2:]
+        line = f.readline().split('\n')[0][2:] + ('\n' if i in [3, 7, 11] else '')
+
         poem += line
+
         if (i != 13):
             poem += '\n'
         print(line)
